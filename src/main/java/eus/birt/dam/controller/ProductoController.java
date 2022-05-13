@@ -30,13 +30,7 @@ public class ProductoController {
 		return productoRepository.findAll();
 	}
 	
-	/*@GetMapping("/{id}")
-	public Producto showById(@PathVariable("id") String id) {
-		return productoRepository.findById(id).orElse(null);
-	}*/
-	
-	//Otra opción es usar el name como elemento de búsqueda en el EndPoint
-	//Se crea el método findByFirstName en ProductoRepository (solamente cabecera es suficiente)
+
 		
 	@GetMapping("/{name}")
 	public List <Producto> showByName(@PathVariable("name") String name) {
