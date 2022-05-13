@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document("productos")
 public class Producto {
 
-  @Id private String id; // Puede ser también ObjectId o BigInt
+  @Id private String id;
 
   private String name;
 
